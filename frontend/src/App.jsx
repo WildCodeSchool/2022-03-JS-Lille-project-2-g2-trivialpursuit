@@ -12,8 +12,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/game" element={<Game />} />
           </Routes>
-          {/* <Home /> */}
-          {/* <Game /> */}
         </main>
       </Styled>
     </div>

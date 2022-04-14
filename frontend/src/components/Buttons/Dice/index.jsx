@@ -7,4 +7,3 @@ export default function Dice() {
     </Style>
   );
 }
-// <img src="../src/assets/pictures/dice5.svg" alt="dice" />

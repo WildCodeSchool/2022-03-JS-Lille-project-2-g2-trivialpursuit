@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export default styled.section`
-  //border: 0.5px solid;
   justify-content: center;
   .dice {
     object-position: top;
@@ -9,8 +8,6 @@ export default styled.section`
     transform: rotate(20deg);
     position: relative;
     bottom: 50px;
-
-    // float: left;
   }
   .pawn {
     position: absolute;

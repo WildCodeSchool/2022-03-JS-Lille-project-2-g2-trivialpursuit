@@ -33,5 +33,3 @@ export default styled.div`
     color: #345a7d;
   }
 `;
-
-// 345A7D

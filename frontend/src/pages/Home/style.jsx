@@ -5,7 +5,6 @@ export default styled.section`
 
   margin: auto;
   display: flex;
-  //align-items: center;
   flex-direction: column;
   justify-content: space-between;
 
@@ -17,7 +16,4 @@ export default styled.section`
     width: 100%;
     justify-content: center;
   }
-  /* * {
-    border: 0.5px solid;
-  } */
 `;

@@ -1,11 +1,8 @@
 import styled from "styled-components";
-// import Background from "./assets/pictures/background-image.svg";
 
 export default styled.body`
   --main-color: #13293e;
   --back-color: #91c0b2;
-  /* --main-color: #13293e;
-  --back-color: #91c0b2; */
   --white-color: #e8f0ed;
 
   display: flex;
