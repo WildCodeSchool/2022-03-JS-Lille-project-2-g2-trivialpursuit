@@ -5,9 +5,9 @@ import SFooter from "./style";
 function Footer() {
   return (
     <SFooter>
-      <div>
-        <Team />
+      <div className="footer">
         <Legal />
+        <Team />
       </div>
     </SFooter>
   );
