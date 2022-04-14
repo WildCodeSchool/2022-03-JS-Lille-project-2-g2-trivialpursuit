@@ -1,3 +1,4 @@
+
 import Style from "./style";
 import Play from "../../components/Links/Play/index";
 
@@ -12,4 +13,5 @@ export default function Home() {
       </section>
     </Style>
   );
+
 }

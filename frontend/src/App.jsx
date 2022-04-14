@@ -1,19 +1,32 @@
 import { Routes, Route } from "react-router-dom";
 import Styled from "./AppStyle";
-import Game from "./pages/Game/index";
-import Home from "./pages/Home/index";
+import Rules from "./pages/Rules";
+import Legal from "./pages/Legal";
+import Team from "./pages/Team";
+import Home from "./pages/Home";
+import Game from "./pages/Game";
+import Footer from "./components/Archi/Footer";
+
 
 function App() {
   return (
     <div className="App">
+ 
       <Styled>
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/game" element={<Game />} />
-          </Routes>
+            
+          <Route path="/" element={<Home />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/legal" element={<Legal />} />
+          <Route path="/game" element={<Game />} />
+          <Route path="/rules" element={<Rules />} />
+          
+            </Routes>
+
         </main>
       </Styled>
+      <Footer />
     </div>
   );
 }
