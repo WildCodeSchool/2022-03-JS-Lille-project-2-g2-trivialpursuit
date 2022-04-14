@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
+import SLegal from "./style";
 
 function Legal() {
-  return <Link to="/legal">Terms & Conditions</Link>;
+  return (
+    <SLegal>
+      <Link to="/legal">Terms & Conditions</Link>;
+    </SLegal>
+  );
 }
 
 export default Legal;

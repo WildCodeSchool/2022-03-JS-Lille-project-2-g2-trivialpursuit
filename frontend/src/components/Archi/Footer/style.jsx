@@ -9,7 +9,7 @@ export default styled.footer`
     display: flex;
     box-sizing: border-box;
     align-items: center;
-    background-color: blanchedalmond;
+    background-color: #13293e;
     padding-inline: 2vw;
 
     div.footer {
