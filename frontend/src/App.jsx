@@ -1,16 +1,18 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Archi/Header";
+import Styled from "./AppStyle";
 import Rules from "./pages/Rules";
 import Legal from "./pages/Legal";
 import Team from "./pages/Team";
 import Game from "./pages/Game";
 import Footer from "./components/Archi/Footer";
 
+
 function App() {
   return (
     <div className="App">
-      <p>WESH</p>
+     <Styled>
       <Header />
       <main>
         <Routes>
@@ -19,9 +21,10 @@ function App() {
           <Route path="/legal" element={<Legal />} />
           <Route path="/game" element={<Game />} />
           <Route path="/rules" element={<Rules />} />
-        </Routes>
-      </main>
+            </Routes>
+        </main>
       <Footer />
+             </Styled>
     </div>
   );
 }

@@ -10,6 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Reset />
     <GlobalStyle />
+
     <BrowserRouter>
       <App />
     </BrowserRouter>
