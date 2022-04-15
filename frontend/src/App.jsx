@@ -21,10 +21,10 @@ function App() {
           <Route path="/legal" element={<Legal />} />
           <Route path="/game" element={<Game />} />
           <Route path="/rules" element={<Rules />} />
-            </Routes>
+        </Routes>
         </main>
       <Footer />
-             </Styled>
+    </Styled>
     </div>
   );
 }
