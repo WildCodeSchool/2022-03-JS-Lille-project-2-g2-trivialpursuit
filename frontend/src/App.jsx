@@ -8,23 +8,22 @@ import Team from "./pages/Team";
 import Game from "./pages/Game";
 import Footer from "./components/Archi/Footer";
 
-
 function App() {
   return (
     <div className="App">
-     <Styled>
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/legal" element={<Legal />} />
-          <Route path="/game" element={<Game />} />
-          <Route path="/rules" element={<Rules />} />
-        </Routes>
-      </main>
-      <Footer />
-     </Styled>
+      <Styled>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/legal" element={<Legal />} />
+            <Route path="/game" element={<Game />} />
+            <Route path="/rules" element={<Rules />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Styled>
     </div>
   );
 }
