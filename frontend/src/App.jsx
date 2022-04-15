@@ -22,9 +22,9 @@ function App() {
           <Route path="/game" element={<Game />} />
           <Route path="/rules" element={<Rules />} />
         </Routes>
-        </main>
+      </main>
       <Footer />
-    </Styled>
+     </Styled>
     </div>
   );
 }
