@@ -15,10 +15,7 @@ export default function Header() {
       <div className="logo">
         <img src={Logo} alt="logo" />
       </div>
-      <button type="button" className="hamburger" onClick={toggleBurger}>
-        <Burger burger={burgerOpen} />
-      </button>
-
+      <Burger burger={burgerOpen} func={toggleBurger} />
       <Rules />
     </SHeader>
   );
