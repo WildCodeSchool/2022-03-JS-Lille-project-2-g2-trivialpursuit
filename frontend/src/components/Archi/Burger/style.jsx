@@ -55,4 +55,10 @@ export default styled.div`
   .burger3 {
     transform: ${(props) => (props.isOpen ? "rotate(-45deg)" : "rotate(0)")};
   }
+
+  @media screen and (min-width: 700px) {
+    .hamburger {
+      display: none;
+    }
+  }
 `;
