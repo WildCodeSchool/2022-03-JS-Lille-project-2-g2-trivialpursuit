@@ -1,4 +1,3 @@
-
 import Style from "./style";
 import Question from "../../components/Question/index";
 import Dice from "../../components/Buttons/Dice/index";

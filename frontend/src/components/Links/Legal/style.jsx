@@ -7,7 +7,7 @@ export default styled.div`
       color: white;
       text-decoration: none;
       font-weight: bolder;
-      font-family: Comic Neue;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: larger;
     }
   }

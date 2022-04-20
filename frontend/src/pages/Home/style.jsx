@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export default styled.section`
-  height: 65vh;
-
   margin: auto;
   display: flex;
   flex-direction: column;
