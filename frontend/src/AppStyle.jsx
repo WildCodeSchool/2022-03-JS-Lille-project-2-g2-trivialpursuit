@@ -27,7 +27,6 @@ export default styled.body`
   h5,
   h6 {
     font-family: Arial, Helvetica, sans-serif;
-    /* color: var(--main-color); */
   }
   p {
     font-size: 1em;
