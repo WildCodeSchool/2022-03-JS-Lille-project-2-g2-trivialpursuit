@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.body`
   --main-color: #13293e;
-  --back-color: #91c0b2;
+  --back-color: rgba(77, 4, 195, 0.5);
   --white-color: #e8f0ed;
 
   main {
