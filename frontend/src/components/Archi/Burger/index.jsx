@@ -6,9 +6,9 @@ export default function Burger({ ...props }) {
   return (
     <SBurger isOpen={props.burger} onClick={props.func}>
       <div className="hamburger">
-        <span className="burger burger1" to="/Rules" />
-        <span className="burger burger2" to="/Rules" />
-        <span className="burger burger3" to="/Rules" />
+        <div className="burger burger1" />
+        <div className="burger burger2" />
+        <div className="burger burger3" />
       </div>
       <div className="nav">
         <ul>
