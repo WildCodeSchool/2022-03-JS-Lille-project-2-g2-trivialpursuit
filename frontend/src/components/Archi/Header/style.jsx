@@ -13,6 +13,10 @@ export default styled.header`
     object-fit: contain;
   }
 
+  .hamburger {
+    outline: none;
+  }
+
   @media screen and (min-width: 700px) {
     width: 100vw;
     height: 19vh;
@@ -25,6 +29,9 @@ export default styled.header`
       width: 100%;
       display: flex;
       justify-content: center;
+    }
+    .hamburger {
+      display: none;
     }
   }
 `;
