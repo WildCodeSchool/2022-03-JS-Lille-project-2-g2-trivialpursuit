@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export default styled.section`
-  .question {
-  }
   .dice {
     transform: rotate(20deg);
     position: relative;
