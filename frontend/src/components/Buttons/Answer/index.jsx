@@ -1,11 +1,12 @@
+import PropTypes from "prop-types";
 import Style from "./style";
 
-export default function Answer() {
+export default function Answer({ data: { correctAnswer } }) {
   return (
     <Style>
       <div className="answers">
         <div className="answer">
-          <p>En Finlande</p>
+          <p>{correctAnswer}</p>
         </div>
         <div className="answer">
           <p>En Grande Bretagne</p>
@@ -20,3 +21,14 @@ export default function Answer() {
     </Style>
   );
 }
+
+Answer.propTypes = {
+  data: PropTypes.shape({
+    correctAnswer: PropTypes.string,
+  }),
+};
+Answer.defaultProps = {
+  data: PropTypes.shape({
+    correctAnswer: "",
+  }),
+};
