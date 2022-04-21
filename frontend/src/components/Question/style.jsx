@@ -9,7 +9,7 @@ export default styled.div`
     width: 44vh;
     margin-bottom: 4vh;
   }
-  .categorie {
+  #category {
     border-radius: 5px 5px 0 0;
     width: 100%;
     height: 6vh;
