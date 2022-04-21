@@ -8,9 +8,7 @@ const GlobalStyle = createGlobalStyle`
   --font-family: Arial, Helvetica, sans-serif;
   --hover-color:rgb(77, 4, 195);
 }
-
-  body{
-
+body{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,9 +17,9 @@ const GlobalStyle = createGlobalStyle`
   width: 100vw;
   height: 100vh;
   background-image: url("../src/assets/pictures/background-image.svg");
-  background-size: 100%;
-  
+  background-size: 100%;  
 }
+
   p,
   h1,
   h2,
