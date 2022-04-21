@@ -12,7 +12,7 @@ export default function Game() {
         <div className="dice">
           <Dice />
         </div>
-        <Answer />
+        <Answer className="answer" />
         <Pawn className="pawn" />
       </section>
     </Style>
