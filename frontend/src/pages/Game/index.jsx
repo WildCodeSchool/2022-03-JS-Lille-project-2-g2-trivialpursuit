@@ -34,6 +34,7 @@ export default function Game() {
         <div className="dice">
           <Dice onClick={getPLay} value={play} />
         </div>
+        <Answer className="answer" />
         <Answer data={play} />
         <Pawn className="pawn" />
       </section>
