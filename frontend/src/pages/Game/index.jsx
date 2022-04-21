@@ -7,26 +7,22 @@ import Answer from "../../components/Buttons/Answer/index";
 import Pawn from "../../components/Pawn/index";
 
 export default function Game() {
-  const [play, setPlay] = useState([]);
+  const [play, setPlay] = useState({});
   const getPLay = () => {
-    axios
-      .get("https://opentdb.com/api.php?amount=1")
-
-      .then(({ data }) => {
-        const rawData = data.results[0];
-        const { category, type, difficulty, question } = rawData;
-        setPlay({
-          category,
-          type,
-          difficulty,
-          question,
-          correctAnswer: rawData.correct_answer,
-          incorrectAnswer: rawData.incorrect_answer,
-        });
+    axios.get("https://opentdb.com/api.php?amount=1").then(({ data }) => {
+      const rawData = data.results[0];
+      const { category, type, difficulty, question } = rawData;
+      setPlay({
+        category,
+        type,
+        difficulty,
+        question,
+        correctAnswer: rawData.correct_answer,
+        incorrectAnswers: rawData.incorrect_answers,
       });
+    });
   };
   useEffect(getPLay, []);
-
   return (
     <Style>
       <section>
@@ -34,8 +30,7 @@ export default function Game() {
         <div className="dice">
           <Dice onClick={getPLay} value={play} />
         </div>
-        <Answer className="answer" />
-        <Answer data={play} />
+        {play.incorrectAnswers && <Answer data={play} />}
         <Pawn className="pawn" />
       </section>
     </Style>

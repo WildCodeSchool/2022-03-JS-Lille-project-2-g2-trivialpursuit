@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default styled.header`
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 28vh;
+  height: 24vh;
   width: 100vw;
   display: flex;
   align-items: center;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.div`
   main {
-    height: 72vh;
+    height: 76vh;
     display: flex;
     align-items: center;
     flex-direction: column;

@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import SHeader from "./style";
@@ -14,15 +13,12 @@ export default function Header() {
 
   return (
     <SHeader>
-      <div className="logo">
-        <img src={Logo} alt="logo" />
-      </div>
-      <Burger burger={burgerOpen} func={toggleBurger} />
-        <Link to="/">
+      <Link to="/">
         <div className="logo">
           <img src={Logo} alt="logo" />
         </div>
       </Link>
+      <Burger burger={burgerOpen} func={toggleBurger} />
       <Rules />
     </SHeader>
   );

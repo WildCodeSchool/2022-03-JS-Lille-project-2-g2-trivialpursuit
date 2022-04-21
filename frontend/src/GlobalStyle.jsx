@@ -25,7 +25,9 @@ body{
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  a
+   {
     font-family: var(--font-family);
   }
   p {

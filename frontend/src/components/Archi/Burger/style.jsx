@@ -15,7 +15,7 @@ export default styled.div`
     width: 2rem;
     height: 0.25rem;
     border-radius: 10px;
-    background-color: black;
+    background-color: var(--main-color);
     transform-origin: 1px;
     transition: all 0.3s linear;
   }
@@ -25,13 +25,13 @@ export default styled.div`
     position: fixed;
     right: 10px;
     top: 50px;
-    background-color: #13293e;
+    background-color: var(--main-color);
     opacity: 0.9;
   }
 
   a {
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
     font-size: 1.5rem;
   }
 
