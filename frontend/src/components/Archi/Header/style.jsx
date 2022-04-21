@@ -28,5 +28,8 @@ export default styled.header`
       display: flex;
       justify-content: center;
     }
+    .hamburger {
+      display: none;
+    }
   }
 `;
