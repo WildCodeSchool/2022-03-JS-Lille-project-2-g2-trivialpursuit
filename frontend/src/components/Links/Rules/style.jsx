@@ -17,6 +17,10 @@ export default styled.div`
       flex-direction: column;
       align-items: center;
       text-decoration: none;
+      color: #13293e;
+      font-weight: bolder;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: larger;
     }
   }
 `;
