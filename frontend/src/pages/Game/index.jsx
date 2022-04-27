@@ -8,9 +8,14 @@ import Pawn from "../../components/Pawn/index";
 
 export default function Game() {
   const [play, setPlay] = useState({});
-  const getPLay = () => {
+  const [stats, setStats] = useState({});
+
+  const getPlay = () => {
+    if (!stats.categ) return;
     axios
-      .get("https://opentdb.com/api.php?amount=1")
+      .get(
+        `https://opentdb.com/api.php?amount=1&category=${stats.categ.number}&difficulty=${stats.difficulty}`
+      )
 
       .then(({ data }) => {
         const rawData = data.results[0];
@@ -25,16 +30,16 @@ export default function Game() {
         });
       });
   };
-  useEffect(getPLay, []);
-
+  useEffect(getPlay, [stats]);
   return (
     <Style>
       <section>
         <Question data={play} />
         <div className="dice">
-          <Dice onClick={getPLay} value={play} />
+          <Dice setStats={setStats} />
         </div>
         {play.incorrectAnswers && <Answer data={play} />}
+
         <Pawn className="pawn" />
       </section>
     </Style>

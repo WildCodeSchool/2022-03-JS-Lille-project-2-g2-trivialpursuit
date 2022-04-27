@@ -6,14 +6,27 @@ export default function Answer({ data: { correctAnswer, incorrectAnswers } }) {
   const [answers] = useState(
     [correctAnswer, ...incorrectAnswers].sort(() => Math.random() - 0.5)
   );
+  const [clickable, setClickable] = useState(true);
+
+  const hClickAnswer = (evt) => {
+    if (!clickable) return;
+    setClickable(false);
+    evt.target.classList.add("selected");
+  };
 
   return (
     <Style>
       <div className="answers">
         {answers.map((answer) => (
-          <div className="answer">
+          <button
+            type="button"
+            onClick={hClickAnswer}
+            className={`answer ${
+              answer === correctAnswer ? "right" : "wrong"
+            } `}
+          >
             <p key={answer}>{answer}</p>
-          </div>
+          </button>
         ))}
       </div>
     </Style>
