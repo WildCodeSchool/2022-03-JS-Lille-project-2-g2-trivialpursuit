@@ -26,7 +26,7 @@ export default styled.div`
   }
 
   h3 {
-    color: white;
+    color: var(--white-color);
     font-size: 3.5em;
   }
   h3:hover {

@@ -10,7 +10,7 @@ export default styled.footer`
     display: flex;
     box-sizing: border-box;
     align-items: center;
-    background-color: #13293e;
+    background-color: var(--main-color);
     padding-inline: 2vw;
 
     div.footer {

@@ -4,11 +4,13 @@ export default styled.header`
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 28vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+
   img {
-    height: 20vh;
+    height: 13vh;
     width: 50vw;
     object-fit: contain;
   }
@@ -25,6 +27,9 @@ export default styled.header`
       width: 100%;
       display: flex;
       justify-content: center;
+    }
+    .hamburger {
+      display: none;
     }
   }
 `;

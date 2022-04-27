@@ -9,9 +9,9 @@ export default styled.div`
       text-decoration: none;
     }
     p {
-      color: white;
+      color: var(--white-color);
       font-weight: bolder;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: var(--font-family);
       font-size: larger;
       padding-right: 1vw;
     }
