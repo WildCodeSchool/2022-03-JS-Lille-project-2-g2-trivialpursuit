@@ -16,7 +16,6 @@ export default function Game() {
       .get(
         `https://opentdb.com/api.php?amount=1&category=${stats.categ.number}&difficulty=${stats.difficulty}`
       )
-
       .then(({ data }) => {
         const rawData = data.results[0];
         const { category, type, difficulty, question } = rawData;
@@ -39,7 +38,6 @@ export default function Game() {
           <Dice setStats={setStats} />
         </div>
         {play.incorrectAnswers && <Answer data={play} />}
-
         <Pawn className="pawn" />
       </section>
     </Style>

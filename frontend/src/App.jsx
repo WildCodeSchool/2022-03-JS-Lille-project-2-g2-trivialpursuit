@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Archi/Header";
-import Styled from "./AppStyle";
 import Rules from "./pages/Rules";
 import Legal from "./pages/Legal";
 import Team from "./pages/Team";
 import Game from "./pages/Game";
 import Footer from "./components/Archi/Footer";
+import Styled from "./AppStyle";
 
 function App() {
   return (
