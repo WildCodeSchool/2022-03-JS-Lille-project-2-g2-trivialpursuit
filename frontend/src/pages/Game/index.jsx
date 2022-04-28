@@ -28,8 +28,8 @@ export default function Game() {
           incorrectAnswers: rawData.incorrect_answers,
         });
       });
-    });
   };
+
   useEffect(getPlay, [stats]);
   return (
     <Style>
