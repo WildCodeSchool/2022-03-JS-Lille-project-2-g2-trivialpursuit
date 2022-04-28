@@ -6,6 +6,9 @@ import Dice from "../../components/Buttons/Dice/index";
 import Answer from "../../components/Buttons/Answer/index";
 import Pawn from "../../components/Pawn/index";
 
+const parseEntities = (txt) =>
+  new DOMParser().parseFromString(txt, "text/html").body.innerText;
+
 export default function Game() {
   const [play, setPlay] = useState({});
   const getPLay = () => {
@@ -16,13 +19,16 @@ export default function Game() {
         category,
         type,
         difficulty,
-        question,
-        correctAnswer: rawData.correct_answer,
-        incorrectAnswers: rawData.incorrect_answers,
+        question: parseEntities(question),
+        correctAnswer: parseEntities(rawData.correct_answer),
+        incorrectAnswers: rawData.incorrect_answers.map((ans) =>
+          parseEntities(ans)
+        ),
       });
     });
   };
   useEffect(getPLay, []);
+  console.log(play);
   return (
     <Style>
       <section>
