@@ -9,7 +9,8 @@ import Pawn from "../../components/Pawn/index";
 export default function Game() {
   const [play, setPlay] = useState({});
   const [stats, setStats] = useState({});
-
+  const parseEntities = (txt) =>
+    new DOMParser().parseFromString(txt, "text/html").body.innerText;
   const getPlay = () => {
     if (!stats.categ) return;
     axios
@@ -23,13 +24,14 @@ export default function Game() {
           category,
           type,
           difficulty,
-          question,
-          correctAnswer: rawData.correct_answer,
-          incorrectAnswers: rawData.incorrect_answers,
+          question: parseEntities(question),
+          correctAnswer: parseEntities(rawData.correct_answer),
+          incorrectAnswers: rawData.incorrect_answers.map((ans) =>
+            parseEntities(ans)
+          ),
         });
       });
   };
-
   useEffect(getPlay, [stats]);
   return (
     <Style>
