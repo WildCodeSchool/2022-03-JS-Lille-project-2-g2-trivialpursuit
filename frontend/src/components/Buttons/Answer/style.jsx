@@ -28,7 +28,7 @@ export default styled.div`
 
     &:hover {
       font-weight: bold;
-      color: #f4f7f6;
+      color: var(--white-color);
       background-color: var(--main-color);
     }
   }
@@ -36,9 +36,10 @@ export default styled.div`
   .right.selected {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       #78d133;
-
+    color: var(--white-color);
+    font-weight: bold;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 3px solid #5aa233;
+    border: 3px solid var(--right-answer-border);
     .smileyRight {
       display: block;
     }
@@ -46,9 +47,10 @@ export default styled.div`
   .wrong.selected {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       #f70e0e;
-
+    color: var(--white-color);
+    font-weight: bold;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 3px solid #f60e0e;
+    border: 3px solid var(--wrong-answer-border);
 
     .smileyWrong {
       display: block;

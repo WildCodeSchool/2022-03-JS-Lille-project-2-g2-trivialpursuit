@@ -5,7 +5,12 @@ const GlobalStyle = createGlobalStyle`
   --main-color: #13293e;
   --back-color: rgba(77, 4, 195, 0.5);
   --white-color: #e8f0ed;
-  --font-family: Arial, Helvetica, sans-serif;
+  --right-answer:#78d133;
+  --right-answer-border:#5aa233;
+  --wrong-answer:#f70e0e;
+  --wrong-answer-border:#f60e0e;
+  --font-family: 'Andika New Basic', sans-serif;
+  --font-family-baseline:'Handlee', cursive;
   --hover-color:rgb(77, 4, 195);
 }
 body{
