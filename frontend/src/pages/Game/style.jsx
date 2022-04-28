@@ -15,7 +15,7 @@ export default styled.section`
     margin: auto;
     width: 22vw;
     position: relative;
-    bottom: 30px;
+    bottom: 35px;
   }
 
   @media screen and (min-width: 700px) {
