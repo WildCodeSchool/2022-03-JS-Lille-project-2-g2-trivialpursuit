@@ -36,6 +36,7 @@ export default styled.div`
   .right.selected {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       var(--right-answer);
+    background-color: var(--right-answer);
     color: var(--white-color);
     font-weight: bold;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -47,6 +48,7 @@ export default styled.div`
   .wrong.selected {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       var(--wrong-answer);
+    background-color: var(--wrong-answer);
     color: var(--white-color);
     font-weight: bold;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -55,12 +57,6 @@ export default styled.div`
     .smileyWrong {
       display: block;
     }
-  }
-  .right.selected {
-    background-color: var(--right-answer);
-  }
-  .wrong.selected {
-    background-color: var(--wrong-answer);
   }
   .none {
     background-color: #b8b5a9;
