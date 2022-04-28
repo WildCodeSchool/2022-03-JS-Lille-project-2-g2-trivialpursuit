@@ -4,7 +4,7 @@ export default styled.section`
   .dice {
     transform: rotate(20deg);
     position: relative;
-    bottom: 50px;
+    bottom: 40px;
   }
   .answer {
     margin-top: 1vh;
@@ -13,7 +13,7 @@ export default styled.section`
   }
   .pawn {
     margin: auto;
-    width: 25vw;
+    width: 22vw;
     position: relative;
     bottom: 30px;
   }
@@ -26,7 +26,6 @@ export default styled.section`
     }
     .pawn {
       position: absolute;
-      z-index: 100;
       bottom: 16.5vh;
       right: 30vw;
       width: 9vw;

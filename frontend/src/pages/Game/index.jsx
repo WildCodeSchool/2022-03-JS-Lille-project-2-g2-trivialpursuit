@@ -29,6 +29,7 @@ export default function Game() {
         });
       });
   };
+
   useEffect(getPlay, [stats]);
   return (
     <Style>

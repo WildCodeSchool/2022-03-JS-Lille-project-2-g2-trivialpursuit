@@ -32,7 +32,6 @@ export default function Answer({ data: { correctAnswer, incorrectAnswers } }) {
     </Style>
   );
 }
-
 Answer.propTypes = {
   data: PropTypes.shape({
     correctAnswer: PropTypes.string,
