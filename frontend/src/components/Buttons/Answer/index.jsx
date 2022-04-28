@@ -1,24 +1,32 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 import Style from "./style";
 
 export default function Answer({ data: { correctAnswer, incorrectAnswers } }) {
-  const answers = [];
-  function arrayOfAnswers() {
-    for (let i = 0; i < incorrectAnswers.length; i += 1) {
-      answers.push(incorrectAnswers[i]);
-    }
-    answers.push(correctAnswer);
-    return answers.sort(() => Math.random() - 0.5);
-  }
-  arrayOfAnswers(answers);
+  const [answers] = useState(
+    [correctAnswer, ...incorrectAnswers].sort(() => Math.random() - 0.5)
+  );
+  const [clickable, setClickable] = useState(true);
+
+  const hClickAnswer = (evt) => {
+    if (!clickable) return;
+    setClickable(false);
+    evt.target.classList.add("selected");
+  };
 
   return (
     <Style>
       <div className="answers">
         {answers.map((answer) => (
-          <div className="answer">
-            <p>{answer}</p>
-          </div>
+          <button
+            type="button"
+            onClick={hClickAnswer}
+            className={`answer ${
+              answer === correctAnswer ? "right" : "wrong"
+            } `}
+          >
+            <p key={answer}>{answer}</p>
+          </button>
         ))}
       </div>
     </Style>

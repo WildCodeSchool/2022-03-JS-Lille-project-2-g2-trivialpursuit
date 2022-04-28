@@ -25,4 +25,14 @@ export default styled.div`
   .answer:hover {
     background-color: var(--main-color);
   }
+
+  .right.selected {
+    background-color: green;
+  }
+  .wrong.selected {
+    background-color: #802d00;
+  }
+  .none {
+    background-color: #b8b5a9;
+  }
 `;
