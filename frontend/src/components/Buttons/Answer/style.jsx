@@ -57,4 +57,14 @@ export default styled.div`
   .none {
     background-color: #b8b5a9;
   }
+
+  .right.selected {
+    background-color: green;
+  }
+  .wrong.selected {
+    background-color: #802d00;
+  }
+  .none {
+    background-color: #b8b5a9;
+  }
 `;
