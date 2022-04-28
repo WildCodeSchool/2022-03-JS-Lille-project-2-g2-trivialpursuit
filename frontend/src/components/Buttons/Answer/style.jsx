@@ -5,7 +5,7 @@ export default styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 27vh;
   }
   .answer {
