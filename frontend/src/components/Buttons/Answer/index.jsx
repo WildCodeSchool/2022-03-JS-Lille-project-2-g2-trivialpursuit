@@ -14,13 +14,6 @@ export default function Answer({ data: { correctAnswer, incorrectAnswers } }) {
     setClickable(false);
     evt.target.classList.add("selected");
   };
-  // const[smileys, setSmileys] = useState()
-  // const smiley= ()=>{
-  //   if (correctAnswer === "rigth");
-  //   {
-
-  //   }
-  // };
 
   return (
     <Style>
