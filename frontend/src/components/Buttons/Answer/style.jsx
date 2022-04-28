@@ -35,7 +35,7 @@ export default styled.div`
 
   .right.selected {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      #78d133;
+      var(--right-answer);
     color: var(--white-color);
     font-weight: bold;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -46,7 +46,7 @@ export default styled.div`
   }
   .wrong.selected {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      #f70e0e;
+      var(--wrong-answer);
     color: var(--white-color);
     font-weight: bold;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -56,15 +56,11 @@ export default styled.div`
       display: block;
     }
   }
-  .none {
-    background-color: #b8b5a9;
-  }
-
   .right.selected {
-    background-color: green;
+    background-color: var(--right-answer);
   }
   .wrong.selected {
-    background-color: #802d00;
+    background-color: var(--wrong-answer);
   }
   .none {
     background-color: #b8b5a9;
