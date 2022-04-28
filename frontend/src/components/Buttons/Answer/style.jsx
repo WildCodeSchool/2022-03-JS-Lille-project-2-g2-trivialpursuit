@@ -43,6 +43,19 @@ export default styled.div`
       display: block;
     }
   }
+
+  .right {
+    background: ${(props) =>
+      props.finished &&
+      " linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #78d133; "};
+
+    box-shadow: ${(props) =>
+      props.finished && "0px 4px 4px rgba(0, 0, 0, 0.25);"};
+    border: ${(props) => props.finished && "3px solid #5aa233;"};
+    .smileyRight {
+      display: ${(props) => props.finished && "block"};
+    }
+  }
   .wrong.selected {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       #f70e0e;
@@ -54,8 +67,9 @@ export default styled.div`
       display: block;
     }
   }
-  .none {
-    background-color: #b8b5a9;
+
+  .wrong {
+    opacity: ${(props) => props.finished && "0.6"};
   }
 
   .right.selected {
