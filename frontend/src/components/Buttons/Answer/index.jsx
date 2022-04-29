@@ -23,13 +23,14 @@ export default function Answer({ data: { correctAnswer, incorrectAnswers } }) {
   }, [correctAnswer]);
 
   return (
-    <Style>
+    <Style finished={!clickable}>
       <div className="answers">
         {answers.map((answer) => (
           <button
             type="button"
             onClick={hClickAnswer}
-            className={`answer ${answer === correctAnswer ? "right" : "wrong"}`}
+            className={`answer ${answer === correctAnswer ? "right" : "wrong"} 
+            `}
             key={answer}
           >
             {answer}
