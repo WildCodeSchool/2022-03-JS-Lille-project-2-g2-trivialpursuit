@@ -16,7 +16,7 @@ export default styled.div`
     &:hover {
       background-image: url("../src/assets/pictures/play-button-hover.svg");
       background-size: contain;
-      width: 40vh;
+      width: 40vw;
       height: 40vh;
     }
   }
