@@ -19,6 +19,6 @@ export default styled.section`
     font-weight: bold;
   }
   div {
-    width: 40vh;
+    width: 40vw;
   }
 `;
