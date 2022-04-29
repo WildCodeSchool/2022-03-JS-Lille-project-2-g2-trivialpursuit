@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Style from "./style";
 import right from "../../../assets/pictures/right.svg";
 import wrong from "../../../assets/pictures/wrong.svg";
 
 export default function Answer({ data: { correctAnswer, incorrectAnswers } }) {
-  const [answers] = useState(
+  const [answers, setAnswers] = useState(
     [correctAnswer, ...incorrectAnswers].sort(() => Math.random() - 0.5)
   );
   const [clickable, setClickable] = useState(true);
@@ -14,6 +14,13 @@ export default function Answer({ data: { correctAnswer, incorrectAnswers } }) {
     setClickable(false);
     evt.target.classList.add("selected");
   };
+
+  useEffect(() => {
+    setAnswers(
+      [correctAnswer, ...incorrectAnswers].sort(() => Math.random() - 0.5)
+    );
+    setClickable(true);
+  }, [correctAnswer]);
 
   return (
     <Style>
