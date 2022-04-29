@@ -7,8 +7,10 @@ const GlobalStyle = createGlobalStyle`
   --white-color: #e8f0ed;
   --right-answer:#78d133;
   --right-answer-border:#5aa233;
+  --right-answer-background:green;
   --wrong-answer:#f70e0e;
   --wrong-answer-border:#f60e0e;
+  --wrong-answer-background:#802D00;
   --font-family: 'Andika New Basic', sans-serif;
   --font-family-baseline:'Handlee', cursive;
   --hover-color:rgb(77, 4, 195);

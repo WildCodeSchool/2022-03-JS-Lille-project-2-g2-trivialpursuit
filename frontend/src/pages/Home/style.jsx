@@ -17,6 +17,7 @@ export default styled.section`
     margin-bottom: 8vh;
     font-family: var(--font-family-baseline);
     font-weight: bold;
+    color: var(--main-color);
   }
   div {
     width: 40vw;
