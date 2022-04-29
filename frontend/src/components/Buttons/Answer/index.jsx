@@ -9,11 +9,9 @@ export default function Answer({ data: { correctAnswer, incorrectAnswers } }) {
     [correctAnswer, ...incorrectAnswers].sort(() => Math.random() - 0.5)
   );
   const [clickable, setClickable] = useState(true);
-  const [finished, setFinished] = useState(false);
   const hClickAnswer = (evt) => {
     if (!clickable) return;
     setClickable(false);
-    setFinished(true);
     evt.target.classList.add("selected");
   };
 
@@ -22,11 +20,10 @@ export default function Answer({ data: { correctAnswer, incorrectAnswers } }) {
       [correctAnswer, ...incorrectAnswers].sort(() => Math.random() - 0.5)
     );
     setClickable(true);
-    setFinished(false);
   }, [correctAnswer]);
 
   return (
-    <Style finished={finished}>
+    <Style finished={!clickable}>
       <div className="answers">
         {answers.map((answer) => (
           <button
