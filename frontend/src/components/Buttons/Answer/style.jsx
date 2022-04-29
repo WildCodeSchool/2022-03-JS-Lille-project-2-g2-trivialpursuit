@@ -51,11 +51,13 @@ export default styled.div`
   .right {
     background: ${(props) =>
       props.finished &&
-      " linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #78d133; "};
+      " linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), var(--right-answer); "};
 
     box-shadow: ${(props) =>
       props.finished && "0px 4px 4px rgba(0, 0, 0, 0.25);"};
-    border: ${(props) => props.finished && "3px solid #5aa233;"};
+    border: ${(props) =>
+      props.finished && "3px solid var(--right-answer-border);"};
+    color: ${(props) => props.finished && "var(--white-color);"};
     .smileyRight {
       display: ${(props) => props.finished && "block"};
     }
