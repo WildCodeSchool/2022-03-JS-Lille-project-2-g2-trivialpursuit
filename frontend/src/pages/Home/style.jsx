@@ -20,6 +20,6 @@ export default styled.section`
     color: var(--main-color);
   }
   div {
-    width: 40vw;
+    height: 40vh;
   }
 `;
