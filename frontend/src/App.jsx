@@ -5,6 +5,7 @@ import Rules from "./pages/Rules";
 import Legal from "./pages/Legal";
 import Team from "./pages/Team";
 import Game from "./pages/Game";
+import Victory from "./pages/Victory";
 import Footer from "./components/Archi/Footer";
 import Styled from "./AppStyle";
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/legal" element={<Legal />} />
             <Route path="/game" element={<Game />} />
             <Route path="/rules" element={<Rules />} />
+            <Route path="/victory" element={<Victory />} />
           </Routes>
         </main>
         <Footer />
