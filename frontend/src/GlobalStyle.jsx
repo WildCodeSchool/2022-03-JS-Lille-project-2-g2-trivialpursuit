@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
 :root{
   --main-color: #13293e;
   --back-color: rgba(77, 4, 195, 0.5);
+  --white-opacity:rgba(232, 240, 237, 0.4);
   --white-color: #e8f0ed;
   --right-answer:#78d133;
   --right-answer-border:#5aa233;
