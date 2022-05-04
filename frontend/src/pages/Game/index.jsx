@@ -38,7 +38,11 @@ export default function Game() {
   return (
     <Style>
       <section>
-        <Question data={play} />
+        <Question
+          data={play}
+          categoryName={currentCategory.name}
+          categoryColor={currentCategory.color}
+        />
         <div className="dice">
           <Dice setStats={setStats} />
         </div>
