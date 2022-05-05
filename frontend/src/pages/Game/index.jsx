@@ -10,7 +10,7 @@ import context from "../../context/Ctx";
 export default function Game() {
   const [play, setPlay] = useState({});
   const [stats, setStats] = useState({});
-  const { currentCategory } = useContext(context);
+  const { currentCategory, setClickable } = useContext(context);
   const parseEntities = (txt) =>
     new DOMParser().parseFromString(txt, "text/html").body.innerText;
   const getPlay = () => {
@@ -35,6 +35,9 @@ export default function Game() {
       });
   };
   useEffect(getPlay, [currentCategory]);
+  useEffect(() => {
+    setClickable(false);
+  }, []);
   return (
     <Style>
       <section>
