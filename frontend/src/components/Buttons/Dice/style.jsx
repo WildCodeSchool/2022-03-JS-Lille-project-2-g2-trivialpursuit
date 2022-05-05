@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export default styled.div`
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+
   @media screen and (max-width: 700px) {
   display: flex;
   justify-content: center;
   margin-top: 0;
 }
-
-  display: flex;
-  justify-content: center;
-  margin-top: 7vh;
 
   button {
     width: 8vh;
@@ -33,6 +33,4 @@ export default styled.div`
     95% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
   }
-
-
 `;
