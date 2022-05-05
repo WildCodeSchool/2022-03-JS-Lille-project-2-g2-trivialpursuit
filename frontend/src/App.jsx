@@ -7,6 +7,7 @@ import Team from "./pages/Team";
 import Game from "./pages/Game";
 import Victory from "./pages/Victory";
 import Footer from "./components/Archi/Footer";
+
 import Styled from "./AppStyle";
 
 function App() {
