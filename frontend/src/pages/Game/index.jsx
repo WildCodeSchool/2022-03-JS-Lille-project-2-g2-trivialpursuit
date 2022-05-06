@@ -11,7 +11,7 @@ import context from "../../context/Ctx";
 export default function Game() {
   const [play, setPlay] = useState({});
   const [stats, setStats] = useState({});
-  const { currentCategory, categories } = useContext(context);
+  const { currentCategory, categories, setClickable } = useContext(context);
   const parseEntities = (txt) =>
     new DOMParser().parseFromString(txt, "text/html").body.innerText;
   const getPlay = () => {
@@ -36,6 +36,9 @@ export default function Game() {
       });
   };
   useEffect(getPlay, [currentCategory]);
+  useEffect(() => {
+    setClickable(false);
+  }, []);
   return (
     <Style>
       {!categories.length && <Navigate to="/victory" />}

@@ -5,12 +5,14 @@ import context from "../../../context/Ctx";
 
 export default function Dice({ setStats }) {
   const [dice, setDice] = useState(1);
-  const { categories, setCurrentCategory } = useContext(context);
+
+  const { clickable, categories, setCurrentCategory } = useContext(context);
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
 
   const throwDice = () => {
+    if (clickable) return;
     let difficulty = "easy";
     const diceValue = getRandomInt(6) + 1;
     setDice(diceValue);

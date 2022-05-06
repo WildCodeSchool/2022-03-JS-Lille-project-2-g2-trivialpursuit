@@ -15,6 +15,8 @@ export function CtxProvider({ children }) {
     { number: "22", name: "sports", color: "orange" },
   ]);
   const [currentCategory, setCurrentCategory] = useState({});
+  const [clickable, setClickable] = useState(false);
+
   const winCateg = () => {
     setCategories(
       categories.filter((categ) => {
@@ -31,6 +33,8 @@ export function CtxProvider({ children }) {
         winCateg,
         currentCategory,
         setCurrentCategory,
+        clickable,
+        setClickable,
       }}
     >
       {children}

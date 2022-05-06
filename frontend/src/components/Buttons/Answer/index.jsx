@@ -9,8 +9,7 @@ export default function Answer({ data: { correctAnswer, incorrectAnswers } }) {
   const [answers, setAnswers] = useState(
     [correctAnswer, ...incorrectAnswers].sort(() => Math.random() - 0.5)
   );
-  const [clickable, setClickable] = useState(true);
-  const { winCateg } = useContext(context);
+  const { winCateg, clickable, setClickable } = useContext(context);
   const hClickAnswer = (evt) => {
     if (!clickable) return;
     setClickable(false);
