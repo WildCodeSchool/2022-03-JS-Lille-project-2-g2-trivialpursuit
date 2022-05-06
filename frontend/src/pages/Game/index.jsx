@@ -1,21 +1,24 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { Navigate } from "react-router-dom";
 import Style from "./style";
 import Question from "../../components/Question/index";
 import Dice from "../../components/Buttons/Dice/index";
 import Answer from "../../components/Buttons/Answer/index";
 import Pawn from "../../components/Pawn/index";
+import context from "../../context/Ctx";
 
 export default function Game() {
   const [play, setPlay] = useState({});
   const [stats, setStats] = useState({});
+  const { currentCategory, categories, setClickable } = useContext(context);
   const parseEntities = (txt) =>
     new DOMParser().parseFromString(txt, "text/html").body.innerText;
   const getPlay = () => {
-    if (!stats.categ) return;
+    if (!stats.difficulty) return;
     axios
       .get(
-        `https://opentdb.com/api.php?amount=1&category=${stats.categ.number}&difficulty=${stats.difficulty}`
+        `https://opentdb.com/api.php?amount=1&category=${currentCategory.number}&difficulty=${stats.difficulty}`
       )
       .then(({ data }) => {
         const rawData = data.results[0];
@@ -32,11 +35,19 @@ export default function Game() {
         });
       });
   };
-  useEffect(getPlay, [stats]);
+  useEffect(getPlay, [currentCategory]);
+  useEffect(() => {
+    setClickable(false);
+  }, []);
   return (
     <Style>
+      {!categories.length && <Navigate to="/victory" />}
       <section>
-        <Question data={play} />
+        <Question
+          data={play}
+          categoryName={currentCategory.name}
+          categoryColor={currentCategory.color}
+        />
         <div className="dice">
           <Dice setStats={setStats} />
         </div>

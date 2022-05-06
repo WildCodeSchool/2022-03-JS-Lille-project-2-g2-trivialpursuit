@@ -19,7 +19,20 @@ export default styled.div`
     align-items: center;
     justify-content: center;
   }
+  img {
+    height: 70%;
+    aspect-ratio: 1/1;
+    margin-left: 2%;
+    background-repeat: none;
+  }
+  .none {
+    display: none;
+  }
   h4 {
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 2%;
     color: var(--white-color);
     width: 95%;
   }

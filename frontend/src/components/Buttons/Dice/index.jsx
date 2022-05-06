@@ -1,23 +1,18 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Style from "./style";
+import context from "../../../context/Ctx";
 
 export default function Dice({ setStats }) {
   const [dice, setDice] = useState(1);
-  const categories = [
-    { number: "22", name: "geography", color: "blue" },
-    { number: "14", name: "television", color: "pink" },
-    { number: "23", name: "history", color: "yellow" },
-    { number: "10", name: "books", color: "purple" },
-    { number: "17", name: "science & nature", color: "green" },
-    { number: "22", name: "sports", color: "orange" },
-  ];
 
+  const { clickable, categories, setCurrentCategory } = useContext(context);
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
 
   const throwDice = () => {
+    if (clickable) return;
     let difficulty = "easy";
     const diceValue = getRandomInt(6) + 1;
     setDice(diceValue);
@@ -28,8 +23,8 @@ export default function Dice({ setStats }) {
     } else {
       difficulty = "hard";
     }
-    const categ = categories[getRandomInt(6)];
-    setStats({ difficulty, categ });
+    setCurrentCategory(categories[getRandomInt(categories.length)]);
+    setStats({ difficulty });
   };
 
   return (
