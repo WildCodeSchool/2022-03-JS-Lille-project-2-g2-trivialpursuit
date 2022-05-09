@@ -30,11 +30,17 @@ export default styled.div`
   }
   h4 {
     font-family: var(--font-family);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: left;
-    margin-left: 2%;
     color: var(--white-color);
     width: 95%;
+    padding-left: 5vw;
+  }
+  @media screen and (min-width: 700px) {
+    h4 {
+      font-size: 1.5rem;
+      padding-left: 2vw;
+    }
   }
   .question {
     border-radius: 0 0 5px 5px;
