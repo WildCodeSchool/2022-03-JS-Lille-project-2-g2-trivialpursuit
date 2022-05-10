@@ -1,3 +1,4 @@
+import Replay from "../../components/Links/Replay";
 import { useContext } from "react";
 import SVictory from "./style";
 import pawn from "../../assets/pictures/pawn.svg";
@@ -14,10 +15,15 @@ export default function victory() {
   };
   setIsTimerActive(false);
   return (
-    <SVictory>
-      <img src={banner} alt="Victory Banner" />
-      <p>Congratulation you won in {secondToTime(timer)}</p>
-      <img src={pawn} alt="Pawn" />
-    </SVictory>
+    <div>
+      <SVictory>
+        <img src={banner} alt="Victory Banner" />
+        <img src={pawn} alt="Pawn" />
+        <p>Congratulations you won in {secondToTime(timer)}</p>
+      </SVictory>
+      <div className="replay-container">
+        <Replay />
+      </div>
+    </div>
   );
 }
