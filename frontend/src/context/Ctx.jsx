@@ -14,12 +14,12 @@ export function CtxProvider({ children }) {
   }, 1000);
 
   const [categories, setCategories] = useState([
-    { number: "22", name: "geography", color: "blue" },
-    { number: "14", name: "television", color: "pink" },
-    { number: "23", name: "history", color: "yellow" },
-    { number: "10", name: "books", color: "purple" },
-    { number: "17", name: "science & nature", color: "green" },
-    { number: "22", name: "sports", color: "orange" },
+    { number: "22", name: "Geography", color: "blue" },
+    { number: "14", name: "Television", color: "pink" },
+    { number: "23", name: "History", color: "yellow" },
+    { number: "10", name: "Literature", color: "purple" },
+    { number: "17", name: "Science & Nature", color: "green" },
+    { number: "21", name: "Sports", color: "orange" },
   ]);
   const [currentCategory, setCurrentCategory] = useState({});
   const [clickable, setClickable] = useState(false);
