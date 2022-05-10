@@ -6,7 +6,8 @@ import context from "../../../context/Ctx";
 export default function Dice({ setStats }) {
   const [dice, setDice] = useState(1);
 
-  const { clickable, categories, setCurrentCategory } = useContext(context);
+  const { clickable, categories, setCurrentCategory, setIsTimerActive } =
+    useContext(context);
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
@@ -25,6 +26,7 @@ export default function Dice({ setStats }) {
     }
     setCurrentCategory(categories[getRandomInt(categories.length)]);
     setStats({ difficulty });
+    setIsTimerActive(true);
   };
 
   return (
