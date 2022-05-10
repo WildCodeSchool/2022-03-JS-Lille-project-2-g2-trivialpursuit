@@ -5,7 +5,7 @@ export default styled.div`
     border-radius: 10px;
     background-color: var(--white-opacity);
     font-family: var(--font-family);
-    font-size: 1rem;
+    font-size: 0.65rem;
   }
   ul {
     height: 55vh;
@@ -64,6 +64,7 @@ export default styled.div`
   @media screen and (min-width: 700px) {
     .team {
       width: 60vw;
+      font-size: 1.3rem;
     }
     ul {
       flex-wrap: wrap;
