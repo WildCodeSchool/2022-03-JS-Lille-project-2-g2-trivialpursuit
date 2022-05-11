@@ -7,7 +7,6 @@ export default styled.div`
     align-items: center;
     height: 27vh;
     width: 44vh;
-    /* margin-bottom: 4vh; */
   }
   #category {
     border-radius: 5px 5px 0 0;

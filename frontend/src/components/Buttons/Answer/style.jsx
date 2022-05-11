@@ -15,7 +15,6 @@ export default styled.div`
     position: absolute;
     left: 93%;
   }
-
   .answer {
     border-radius: 10px;
     width: 40vh;
