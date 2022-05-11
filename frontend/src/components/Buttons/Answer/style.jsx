@@ -27,6 +27,7 @@ export default styled.div`
     justify-content: center;
     font-size: 0.9rem;
     font-family: var(--font-family);
+    line-height: 1rem;
 
     &:hover {
       font-weight: bold;
