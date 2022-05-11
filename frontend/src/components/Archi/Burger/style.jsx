@@ -21,24 +21,26 @@ export default styled.div`
   }
   ul {
     display: ${(props) => (props.isOpen ? "block" : "none")};
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-right: 7px;
     position: fixed;
     right: 10px;
     top: 50px;
     background-color: var(--main-color);
     opacity: 0.9;
+    border-radius: 10px;
   }
 
   a {
     text-decoration: none;
     color: var(--white-color);
-    font-size: 1.5rem;
+    font-size: 1.08rem;
   }
 
   li {
-    height: 10vh;
+    height: 5vh;
     width: 50vw;
-    padding-top: 2rem;
+    padding-top: 1rem;
     text-align: center;
   }
 

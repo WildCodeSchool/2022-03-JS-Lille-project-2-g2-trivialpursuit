@@ -13,7 +13,6 @@ export default function Rules() {
             <li>You win the game when you correctly</li>
             <li>answer to one question of each category.</li>
           </ul>
-          <br />
           <p> Good Luck, Have Fun ! :)</p>
         </div>
         <img src={image} alt="categories-explaination" />

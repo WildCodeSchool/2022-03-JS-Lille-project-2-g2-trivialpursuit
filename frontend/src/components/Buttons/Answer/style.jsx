@@ -5,7 +5,7 @@ export default styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     height: 27vh;
   }
 
@@ -25,7 +25,7 @@ export default styled.div`
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-family: var(--font-family);
 
     &:hover {
@@ -35,6 +35,15 @@ export default styled.div`
     }
   }
 
+  @media screen and (min-width: 700px) {
+    .answer {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+    .answers {
+      justify-content: flex-start;
+    }
+  }
   .right.selected {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       var(--right-answer);
