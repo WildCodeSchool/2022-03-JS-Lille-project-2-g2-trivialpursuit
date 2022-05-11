@@ -32,6 +32,11 @@ export function CtxProvider({ children }) {
     );
   };
 
+  const [counter, setCounter] = useState(0);
+  const increase = () => {
+    setCounter((count) => count + 1);
+  };
+
   const reset = () => {
     setCategories([
       { number: "22", name: "Geography", color: "blue" },
@@ -44,6 +49,7 @@ export function CtxProvider({ children }) {
     setClickable(false);
     setTimer(0);
     setCurrentCategory({});
+    setCounter(0);
   };
 
   return (
@@ -61,6 +67,8 @@ export function CtxProvider({ children }) {
         isTimerActive,
         setIsTimerActive,
         reset,
+        increase,
+        counter,
       }}
     >
       {children}
