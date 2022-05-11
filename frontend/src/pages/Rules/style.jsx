@@ -56,8 +56,6 @@ export default styled.section`
   }
 
   @media screen and (min-width: 700px) {
-    max-width: 100vw;
-
     div {
       display: flex;
       flex-direction: row;
@@ -67,16 +65,19 @@ export default styled.section`
       border-radius: 0 0 10px 0;
       border: none;
       margin-top: 0;
-      max-height: 100%;
     }
     ul {
-      padding-top: 4rem;
+      padding-top: 1rem;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
+    }
+    li {
+      font-size: 1rem;
     }
     p {
       padding-top: 2.5rem;
       padding-left: 2.5rem;
+      font-size: 1rem;
     }
 
     .title {

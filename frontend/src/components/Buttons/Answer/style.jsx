@@ -5,7 +5,7 @@ export default styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     height: 27vh;
   }
 
@@ -37,7 +37,11 @@ export default styled.div`
 
   @media screen and (min-width: 700px) {
     .answer {
-      font-size: 1.1rem;
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+    .answers {
+      justify-content: flex-start;
     }
   }
   .right.selected {

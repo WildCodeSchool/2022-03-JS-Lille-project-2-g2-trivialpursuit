@@ -27,7 +27,7 @@ export default styled.section`
     .pawn {
       position: absolute;
       bottom: 16.5vh;
-      right: 30vw;
+      right: 27vw;
       width: 9vw;
     }
   }

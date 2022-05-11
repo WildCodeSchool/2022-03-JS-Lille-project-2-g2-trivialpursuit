@@ -30,7 +30,7 @@ export default styled.div`
   }
   h4 {
     font-family: var(--font-family);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: left;
     color: var(--white-color);
     width: 95%;
