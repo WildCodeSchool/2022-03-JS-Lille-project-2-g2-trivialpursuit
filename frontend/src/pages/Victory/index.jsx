@@ -1,5 +1,5 @@
-import Replay from "../../components/Links/Replay";
 import { useContext } from "react";
+import Replay from "../../components/Links/Replay";
 import SVictory from "./style";
 import pawn from "../../assets/pictures/pawn.svg";
 import banner from "../../assets/pictures/banner.png";
