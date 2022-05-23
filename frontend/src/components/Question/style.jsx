@@ -7,7 +7,6 @@ export default styled.div`
     align-items: center;
     height: 27vh;
     width: 44vh;
-    margin-bottom: 4vh;
   }
   #category {
     border-radius: 5px 5px 0 0;
@@ -30,16 +29,16 @@ export default styled.div`
   }
   h4 {
     font-family: var(--font-family);
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-align: left;
     color: var(--white-color);
     width: 95%;
-    padding-left: 5vw;
+    padding-left: 1vw;
   }
   @media screen and (min-width: 700px) {
     h4 {
-      font-size: 1.5rem;
-      padding-left: 2vw;
+      font-size: 1.2rem;
+      padding-left: 0.4vw;
     }
   }
   .question {
